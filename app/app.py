@@ -10,7 +10,7 @@ def health_check():
         "status": "healthy",
         "container_id": socket.gethostname(),
         "environment": os.getenv("APP_ENV", "production"),
-        "version": "1.0.0"
+        "version": "1.0.1"
     }), 200
 
 if __name__ == "__main__":
